@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmana Ditya | GIS Portfolio</title>
+  <!-- Google Fonts: Montserrat for all text -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container nav-flex">
+      <div class="site-title">Farmana Ditya</div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#map">Interactive Map</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="darkModeToggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+    </div>
+  </header>
+
+  <!-- Hero/Bio Section -->
+  <section id="home" class="hero-section">
+    <div class="container hero-flex">
+      <div class="hero-bio">
+        <h1>GIS Undergraduate Student</h1>
+        <p>
+          <!-- Replace with your bio -->
+          Passionate about spatial analysis, cartography, and web mapping. Experienced in ArcGIS, QGIS, and web GIS development. Skilled in Python, JavaScript, and data visualization. Dedicated to solving real-world problems with geospatial technology.
+        </p>
+        <ul class="skills-list">
+          <li>ArcGIS, QGIS, ENVI, Agisoft, AutoCAD</li>
+          <li>Python, JavaScript, HTML, SQL, Leaflet.js</li>
+          <li>Remote Sensing, Image Processing</li>
+          <li>Data Acquisition & Management</li>
+          <li>Cartography, Visualization</li>
+           <li> Project Management & Communication</li>
+        </ul>
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="Medium"><i class="fab fa-medium"></i></a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <!-- Replace with your photo -->
+        <img src="D:\KULIAH\PORTOFOLIO\assets\profile.png" alt="Profile Photo">
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <!-- Example Project Card -->
+        <div class="project-card">
+          <img src="D:\KULIAH\PORTOFOLIO\assets\storymap1.jpg" alt="StoryMap Screenshot">
+          <div class="project-info">
+            <h3>Swasembada Balekerto StoryMap</h3>
+            <p>An ArcGIS StoryMap showcasing public information and documentation of the KKN-PPM UGM activities in Balekerto Village, highlighting its geography, culture, and community potential.</p>
+            <a href="https://arcg.is/1Sb8au0" target="_blank" rel="noopener" class="project-link">View StoryMap</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="D:\KULIAH\PORTOFOLIO\assets\UEVI.jpg" alt="ArcGIS Online Project">
+          <div class="project-info">
+            <h3>UEVI Earth Engine App</h3>
+            <p>Developed an interactive Google Earth Engine App to visualize the Urban Ecological Vulnerability Index (UEVI) in Sukoharjo, enabling year-by-year comparison through a dynamic swipe interface.</p>
+            <a href="https://ee-sdg-farmanaditya.projects.earthengine.app/view/uevi-in-sukoharjo" target="_blank" rel="noopener" class="project-link">View App</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="D:\KULIAH\PORTOFOLIO\assets\bangalore1.png" alt="Custom Web GIS">
+          <div class="project-info">
+            <h3>Restaurant Service Coverage Analysis using Python</h3>
+            <p>Conducted and visualized a geospatial data science project analyzing restaurant distribution and service coverage in Bangalore using Python, spatial analysis, and visualization to identify market patterns and business opportunities.</p>
+            <a href="https://medium.com/@farmanaditya/geospatial-data-science-for-restaurant-service-analysis-40eec2b22f1f" target="_blank" rel="noopener" class="project-link">View Article and Source Code</a>
+          </div>
+        </div>
+         <div class="project-card">
+          <img src="D:\KULIAH\PORTOFOLIO\assets\folium map.png" alt="Custom Web GIS">
+          <div class="project-info">
+            <h3>Mapping the Global Footprint of COVID-19 with Python</h3>
+            <p>Conducted and visualized a global COVID-19 case analysis wtih Python, combining statistical comparisons and geospatial mapping to identify patterns, hotspots, and regional impacts of the pandemic.</p>
+            <a href="https://medium.com/@farmanaditya/mapping-the-global-footprint-of-covid-19-with-python-ec49d7509e6c" target="_blank" rel="noopener" class="project-link">View Article and Source Code</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="D:\KULIAH\PORTOFOLIO\assets\choropleth globwarm.png" alt="Custom Web GIS">
+          <div class="project-info">
+            <h3>Mapping Global Warming Through Data with Python</h3>
+            <p>Conducted and visualized a geospatial data science project analyzing global temperature trends using Python, interactive mapping, and statistical analysis to uncover patterns of climate change.</p>
+            <a href="https://medium.com/@farmanaditya/tracking-global-warming-through-data-and-maps-with-python-05b01aa272c2" target="_blank" rel="noopener" class="project-link">View Article and Source Code</a>
+          </div>
+        </div>
+        <!-- Tableau Visualization Project Card -->
+        <div class="project-card">
+          <div class="project-info">
+            <h3>CO2 Emission Per Capita Visualization</h3>
+            <p>Interactive dashboard visualizing CO2 emissions per capita using Tableau Public. Explore global and regional emission patterns with dynamic charts and maps.</p>
+            <!-- Tableau Public Embed Landscape -->
+            <div class='tableauPlaceholder tableau-landscape' id='viz1754928524405'>
+              <noscript><a href='#'><img alt='CO2 (Emission Per Capita) ' src='https://public.tableau.com/static/images/QQ/QQPZX7X3B/1_rss.png' style='border: none' /></a></noscript>
+              <object class='tableauViz'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='path' value='shared/QQPZX7X3B' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https://public.tableau.com/static/images/QQ/QQPZX7X3B/1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+                <param name='filter' value='publish=yes' />
+                <param name='filter' value='showOnboarding=true' />
+              </object>
+            </div>
+            <a href="https://public.tableau.com/views/CO2EmissionPerCapita-VDSAcara7/CO2EmissionPerCapita?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" rel="noopener" class="project-link">View Tableau Dashboard</a>
+            <script type='text/javascript'>
+              var divElement = document.getElementById('viz1754928524405');
+              var vizElement = divElement.getElementsByTagName('object')[0];
+              vizElement.style.width = '100%';
+              vizElement.style.height = '200px'; // Landscape aspect ratio
+              var scriptElement = document.createElement('script');
+              scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+              vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+          </div>
+        </div>
+        <!-- Add more project cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Maps Gallery Section -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <h2>Maps Gallery</h2>
+
+      <!-- Land Use Maps Section -->
+      <h3 class="gallery-subtitle">Land Use Maps</h3>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="D:\KULIAH\PORTOFOLIO\assets\pl-balekerto.png" alt="Land Use Map 1" data-full="D:\KULIAH\PORTOFOLIO\assets\pl-balekerto.png">
+          <div class="map-desc">Peta penggunaan lahan Balekerto tahun 2024. Sumber: Analisis Citra Satelit & Survey Lapangan.</div>
+        </div>
+        <div class="gallery-item">
+          <img src="D:\KULIAH\PORTOFOLIO\assets\land_use_bantul.jpg" alt="Land Use Map 2" data-full="D:\KULIAH\PORTOFOLIO\assets\land_use_bantul.jpg">
+          <div class="map-desc">Definitive Land Use Map of a Portion of D.I. Yogyakarta Grid A10 in 2023, produced using Landsat 8 imagery and the supervised Maximum Likelihood classification method in ENVI, complemented by field verification.</div>
+        </div>
+        <!-- Tambahkan gambar peta land use lainnya di sini -->
+      </div>
+
+      <!-- Coastal & Marine Maps Section -->
+      <h3 class="gallery-subtitle">Coastal & Marine Maps</h3>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="D:\KULIAH\PORTOFOLIO\assets\garis pantai multi tahun.jpg" alt="Coastal Map 1" data-full="D:\KULIAH\PORTOFOLIO\assets\garis pantai multi tahun.jpg">
+          <div class="map-desc">Peta garis pantai dan zona pasang surut tahun 2023.</div>
+        </div>
+        <div class="gallery-item">
+          <img src="D:\KULIAH\PORTOFOLIO\assets\geomorfologi.jpg" alt="Marine Map 1" data-full="D:\KULIAH\PORTOFOLIO\assets\geomorfologi.jpg">
+          <div class="map-desc">Peta sebaran terumbu karang dan ekosistem pesisir.</div>
+        </div>
+        <!-- Tambahkan gambar peta pesisir dan kelautan lainnya di sini -->
+      </div>
+
+      <!-- Rainfall Maps Section -->
+      <h3 class="gallery-subtitle">Rainfall Maps</h3>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="D:\KULIAH\PORTOFOLIO\assets\isohyet.jpg" alt="Rainfall Map 1" data-full="D:\KULIAH\PORTOFOLIO\assets\isohyet.jpg">
+          <div class="map-desc">Peta distribusi curah hujan rata-rata tahun 2022.</div>
+        </div>
+        <div class="gallery-item">
+          <img src="D:\KULIAH\PORTOFOLIO\assets\thiessen.jpg" alt="Rainfall Map 2" data-full="D:\KULIAH\PORTOFOLIO\assets\thiessen.jpg">
+          <div class="map-desc">Peta anomali curah hujan bulanan wilayah studi.</div>
+        </div>
+        <!-- Tambahkan gambar peta curah hujan lainnya di sini -->
+      </div>
+
+      <!-- Other Thematic Maps Section -->
+      <h3 class="gallery-subtitle">Other Thematic Maps</h3>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://via.placeholder.com/300x200?text=Thematic+Map+1" alt="Thematic Map 1" data-full="https://via.placeholder.com/1200x800?text=Thematic+Map+1">
+          <div class="map-desc">Peta kepadatan penduduk per desa tahun 2023.</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://via.placeholder.com/300x200?text=Thematic+Map+2" alt="Thematic Map 2" data-full="https://via.placeholder.com/1200x800?text=Thematic+Map+2">
+          <div class="map-desc">Peta aksesibilitas fasilitas kesehatan utama.</div>
+        </div>
+        <!-- Tambahkan gambar peta tematik lain di sini -->
+      </div>
+    </div>
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox-modal">
+      <span class="lightbox-close">&times;</span>
+      <img class="lightbox-img" src="" alt="Map Preview">
+    </div>
+  </section>
+
+  <!-- Interactive Map Section -->
+  <section id="map" class="map-section">
+    <div class="container">
+      <h2>Interactive Map</h2>
+      <div id="leaflet-map"></div>
+      <!-- Legend will be injected by JS -->
+      <div id="map-legend"></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container contact-flex">
+      <div class="contact-info">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for collaborations, internships, or GIS-related inquiries.</p>
+        <ul class="contact-social">
+          <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          <li><a href="#"><i class="fab fa-github"></i> GitHub</a></li>
+          <li><a href="#"><i class="fa-solid fa-envelope"></i> Email</a></li>
+        </ul>
+      </div>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; 2025 Your Name. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Leaflet Plugins -->
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+  <!-- Main JS -->
+  <script src="script.js"></script>
+</body>
+</html>
