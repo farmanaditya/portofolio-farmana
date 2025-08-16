@@ -41,6 +41,10 @@ h1, h2, h3 {
 }
 
 /* Header & Navigation */
+.navbar-brand img {
+  max-height: 36px;
+  width: auto;
+}
 .site-header {
   background: var(--card-bg);
   box-shadow: var(--shadow);
@@ -53,11 +57,6 @@ h1, h2, h3 {
   align-items: center;
   justify-content: space-between;
   padding: 1em 0;
-}
-.site-title {
-  font-size: 1.7em;
-  font-weight: 700;
-  color: var(--primary);
 }
 .nav-list {
   list-style: none;
@@ -446,9 +445,6 @@ body.dark-mode .map-desc {
   }
   .projects-grid, .gallery-grid {
     grid-template-columns: 1fr;
-  }
-  .site-title {
-    font-size: 1.2em;
   }
   .nav-list {
     gap: 1em;
